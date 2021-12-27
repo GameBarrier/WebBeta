@@ -1,0 +1,132 @@
+#header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_logo {
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.30) 0 0 10px);
+}
+
+.header_logo_anim {
+    animation-name: logo_anim;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0.5, 0.5, 1);
+}
+
+@keyframes logo_anim {
+    0% {transform: rotateZ(0);}
+    75% {transform: rotateZ(22.5deg) scale(1.5);}
+    100% {transform: rotateZ(-360deg);}
+}
+
+#header_menu {
+    width: calc(100% - 60px);
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#header_menu_navPoints {
+    height: 60px;
+    background-color: #555;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_menu_navPoint {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+.header_menu_navPoint:hover {
+    filter: brightness(200%);
+}
+
+#header_menu_navPoint02 {
+    transform: translateY(18.75px) scale(0.6);
+    background-color: #aaa;
+}
+
+.header_menu_line {
+    margin-left: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#header_menu_line01 {
+    /* background-color: #522; */
+}
+
+#header_menu_line02 {
+    /* background-color: #252; */
+}
+
+.header_menu_line a {
+    margin-right: 10px;
+    height: 30px;
+}
+
+.header_menu_line_button {
+    color: #000;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 10px 0 10px;
+    transition: 0.2s;
+    outline: none;
+    font-family: 'Oswald';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    white-space: nowrap;
+}
+
+.header_menu_line_button:active {
+    transform: translateY(2.5px);
+}
+
+.header_menu_line_button:hover {
+    filter: brightness(150%);
+    transition: 0.2s;
+}
+
+#header_menu_line01_b00 button {
+    background-color: hsl(15, 80%, 70%);
+}
+
+#header_menu_line01_b01 button {
+    background-color: #85a8e0;
+}
+
+#header_menu_line01_b02 button {
+    background-color: #e0d785;
+}
+
+#header_menu_line01_b03 button {
+    background-color: #85e0b5;
+}
+
+#header_menu_line01_b04 button {
+    background-color: #e085d8;
+}

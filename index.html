@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global_header.css">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Game Barrier</title>
+
+</head>
+<body>
+
+    <video autoplay muted loop id="page01_background" src="img/back_vid.mp4"></video>
+
+    <!-- HEADER -->
+
+    <div id="header">
+
+        <img id="header_logo" src="svg/logo.svg" alt="Game Barrier Logo" onclick="
+            $('#header_logo').removeClass('header_logo_anim'); 
+            void document.getElementById('header_logo').offsetWidth; 
+            $('#header_logo').addClass('header_logo_anim');
+        ">
+
+        <div id="header_menu_navPoints">
+            <div class="header_menu_navPoint" id="header_menu_navPoint01"></div>
+            <div class="header_menu_navPoint" id="header_menu_navPoint02"></div>
+        </div>
+
+        <div id="header_menu">
+
+            <div id="header_menu_line01" class="header_menu_line">
+                <a href="" id="header_menu_line01_b00"><button class="header_menu_line_button">INVADENCE</button></a>
+                <a href="" id="header_menu_line01_b01"><button class="header_menu_line_button">SCREAMBOX</button></a>
+                <a href="" id="header_menu_line01_b02"><button class="header_menu_line_button">SCORCHED</button></a>
+                <a href="" id="header_menu_line01_b03"><button class="header_menu_line_button">BLOCKY</button></a>
+                <a href="" id="header_menu_line01_b04"><button class="header_menu_line_button">DASHOOTERS</button></a>
+            </div>
+    
+            <div id="header_menu_line02" class="header_menu_line">
+                <a href="" id="header_menu_line02_b01"><button class="header_menu_line_button">SOCIAL MEDIA</button></a>
+                <a href="" id="header_menu_line02_b02"><button class="header_menu_line_button">SHOP</button></a>
+                <a href="" id="header_menu_line02_b03"><button class="header_menu_line_button">APPLY</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="pages">
+
+        <div id="page01">
+
+            <div id="page01_text">
+                <h1 style="letter-spacing: 10px;">This is<br><b style="font-size: 80px; letter-spacing: 0;">Game Barrier</b></h1>
+                <p>Game Barrier is a small team of indie developers located all around the world. Their aim is to create fun and unique games, which everyone can enjoy.</p>
+
+                <a target="blank_" href="https://discord.com/invite/gfjRsCU"><button>JOIN OUR DISCORD</button></a>
+            </div>
+
+            <div id="page01_iframe">
+                <iframe src="https://www.youtube.com/embed/ROO143AswaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<!-- SCRIPTS -->
+
+<!-- JQuery --><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main_menu.js"></script>
+
+</html>
