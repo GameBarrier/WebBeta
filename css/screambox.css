@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* MAIN */
+
+* {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    overflow: hidden;
+}
+
+*::selection {
+    background-color: #ff531a;
+}
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+html {
+    background-color: #344869;
+}
+
+body {
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 30px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    font-size: 20px;
+}
+
+/* HEADER */
+
+#head_logo, #head_logo_colored {
+    width: 60px;
+    position: absolute;
+    margin: 20px;
+    transition: 0.5s;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0 0 5px);
+    transform-origin: center;
+}
+
+#head_logo:hover {
+    filter: drop-shadow(rgba(0, 0, 0, 0) 0 0 5px) brightness(200%);
+}
+
+#head_logo_colored {
+    opacity: 0;
+}
+
+#head_logo_colored:hover {
+    visibility: visible;
+    opacity: 100%;
+    transition: 0.25s;
+}
+
+
+/* PAGE */
+
+#background_overlay {
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 500px;
+    position: absolute;
+}
+
+#layer_characters {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+#layer_logo {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#layer_logo img {
+    cursor: pointer;
+    width: 60vw;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(#00000040 20px 20px 5px);
+    transition: 0.1s;
+    pointer-events: visible;
+}
+
+#layer_text {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#layer_text img {
+    width: 300px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+#layer_text p {
+    align-self: center;
+    text-align: justify;
+    font-size: 22.5px;
+    width: 646px;
+}
+
+#layer_text iframe {
+    margin: 60px auto auto auto;
+}
